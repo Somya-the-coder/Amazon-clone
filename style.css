@@ -1,0 +1,268 @@
+*{/*universal selector'*'*/
+    margin:0;/*by default koi margin hamare kisi element ko na mile*/
+    font-family:Arial;/*font used throughout the website(each big company has their own font)*/
+    border:border-box;/*not setting 2px but this means border=ht+wd not outside*/
+}
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;/*text colour*/
+    display: flex;/*to display things in navbar side by side*/
+    align-items:center;
+    justify-content:space-evenly;/*as we do more in navbar things starts to move in left*/
+}
+.nav-logo{/*this one giving is imp to contain all images in navbar[inspect & see](all img has an outer div)if it's not there nothing would appear*/
+    height:50px;
+    width:100px;
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;/*cover is one of the prop of bgcolour(touch & see)it covers all area provided*/
+    height: 50px;/*ht+wd giving is imp to see image*/
+    width: 100%;
+}  
+.border{/*bina iske bhi working but a border must be there na to further treat it(to hover or anything)*/
+    border:1.5px solid transparent/*2 dene se ele move honge while hovering but movement looks nice(;*/
+}
+.border:hover{
+    border: 1.5px solid white
+}
+
+/** box2**/
+
+
+.add-first{/*for deliver to*/
+    color: #cccccc ;
+    font-size: 0.85rem;/*rem is route-em means route ke comparison mei we're setting font size*/
+    margin-left:15px;
+}
+.add-second{/*colour already white hai toh alag se giving colour no zarurat*/
+    font-size: 1rem;/*for India*/
+    margin-left: 3px;
+}
+.add-icon{
+    display: flex;/*to bring things after it in same line, not below*/
+    align-items:center;
+}
+
+/* box3 */
+.nav-search{
+    display:flex;
+    justify-content:space-evenly;
+    background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;/*curving of box*/
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px; 
+    text-align: center;
+    border-top-left-radius: 4px;/*curving of box*/
+    border-bottom-left-radius: 4px;
+    border:none;
+}
+
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon{
+    width: 45px;
+    display:flex;/*flex moves in 1 line*/
+    justify-content:center;/*centers*/
+    align-items:center;/*vertically centers*/
+    font-size:1.2 rem;
+    background-color: #febd68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color:#0f1111;
+}
+.nav-search:hover{
+    border: 2px solid orange;
+}
+
+
+/*box 4*/ 
+span{
+    font-size: 0.7rem
+}
+.nav-second{
+    font-size:0.85rem;
+    font-weight: 700;
+}
+
+/* box-6 */
+.nav-cart i{/*combo of selectors*/
+    font-size: 30px;/*without semicolon also working*/
+    font-weight: 700;
+}
+
+/* Panel */
+.panel{/*main container like navbar so flex here only*/
+    height:40px;
+    background-color:  #222f3d;
+    display:flex;
+    color:white;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.panel-ops p{
+      display:inline;
+      margin-left:15px;
+}
+.panel-ops{
+    width:70%;
+    font-size:0.85rem;
+}
+.panel-deals{
+    font-size:0.9rem;
+    font-weight:700;
+}
+
+/*hero-section*/
+.hero-section{
+    background-image: url("hero_image.jpg");
+    background-size: cover;/*unless this given img do not fit*/
+    height:350px;/*unless u givr it img not visible 14px=0.85rem*/
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+.hero-msg{
+    background-color:white;
+    color:black;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:0.85rem;
+    width:80%;
+    margin-bottom: 25px;
+}
+.hero-msg a{/*a for anchor tag*/
+    color:#007185;
+}
+
+/** shop section **/
+.shop-section{/*container which has a(all) box(s) prop*/
+    display:flex;
+    flex-wrap:wrap;/*tells 4 img up 4 down*/
+    justify-content:space-evenly;
+    background-color: #e2e7e6;
+}
+.box{
+    /*border:2px solid black*/
+    height:400px;
+    width:23%;
+    background-color: white;
+    padding:20px 0px 15px;
+    margin-top:15px;
+}
+.box-img{
+    height:300px;
+    background-size: cover;/*not bgimg but bgsize here rem it*/
+    margin-top: 1rem;/*1rem=16 px*/
+    margin-bottom: 1rem;
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.box-content p{
+    color:#007185;
+}
+
+/* footer */
+footer{
+    margin-top:15px;
+}
+
+.foot-panel1{
+    background-color: #37475a;
+    color:white;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.foot-panel2{
+    background-color: #222f3d;
+    color:white;/*text colour*/
+    height:300px;
+    display:flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 30px;
+}
+ul a{
+    display: block;/*in block format all comes*/
+    font-size:0.85rem;
+    margin-top: 10px;
+    color:#dddddd;
+}
+
+.foot-panel3{
+    background-color: #222f3d;
+    color:white;
+    border-top: 0.5px solid white;
+    height:70px;/*ht giving is imp to see image*/
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;/*cover is one of the prop of bgcolour(touch & see)it covers all area provided*/
+    height: 50px;/*ht+wd giving is imp to see image*/
+    width: 100px;
+}  
+
+.foot-panel4{
+    background-color: #0f1111;
+    color:white;
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+    height:80px;
+    font-size: 0.7rem; 
+    text-align: center;
+}
+.pages{
+    /*margin:20px;...comes as white color*/
+    padding-top: 25px;
+}
+.copyright{
+    padding-top: 5px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
